@@ -42,4 +42,4 @@ Credits
 * capistrano: [Jamis Buck](http://github.com/jamis/capistrano)
 
 
-Copyright (c) 20210 Lachlan Donald, released under the MIT license
+Copyright (c) 2010 Lachlan Donald, released under the MIT license
