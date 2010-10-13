@@ -14,7 +14,7 @@ At present these mappings require several api calls, which are slow.
 Installation
 ============
 
-`capistrano-ec2group` is provided as a Ruby gem, with the following dependencies:
+`capistrano-rightscale` is provided as a Ruby gem, with the following dependencies:
 
 * Capistrano >= 2.1.0
 * Rightscale API
