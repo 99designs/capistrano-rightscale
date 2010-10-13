@@ -1,12 +1,18 @@
-require 'rubygems'
-require 'rake'
-require 'echoe'
-
-Echoe.new('capistrano-rightscale', '0.1') do |p|
-	p.description = "An extension for capistrano for integrating roles with RightScale server tags"
-	p.url = "http://github.com/99designs/capistrano-rightscale"
-	p.author = "Lachlan Donald"
-	p.email = "lachlan@ljd.cc"
-	p.development_dependencies = []
-	p.runtime_dependencies = ["capistrano >=2.1.0", "rightscale-api"]
+begin
+	require 'jeweler'
+	Jeweler::Tasks.new do |gemspec|
+		gemspec.name = "capistrano-rightscale"
+		gemspec.summary = "An extension for capistrano for integrating roles with RightScale server tags"
+		gemspec.description = "An extension for capistrano for integrating roles with RightScale server tags"
+		gemspec.email = "lachlan@ljd.cc"
+		gemspec.homepage = "http://github.com/99designs/capistrano-rightscale"
+		gemspec.authors = ["Lachlan Donald"]
+		gemspec.add_dependency('capistrano', '>= 2.1.0')
+		gemspec.add_dependency('rightscale-api')
+	end
+	Jeweler::GemcutterTasks.new
+rescue LoadError
+	puts "Jeweler, or one of its dependencies, is not available. Install it with: gem install jeweler"
 end
+
+
