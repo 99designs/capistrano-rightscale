@@ -24,7 +24,7 @@ Usage
 
 In order to use the `capistrano-rightscale` plugin, you must require it in your Capfile:
 
-	require 'capistrano-rightscale'
+	require 'capistrano/rightscale'
 
 Then you must specify your Rightscale API credentials:
 
