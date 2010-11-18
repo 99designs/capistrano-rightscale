@@ -9,7 +9,8 @@ Introduction
 [RightScale](http://www.rightscale.com) provides a service for managing deployments of servers in various clouds. Servers can be tagged with
 machine tags. This plugin allows for specific tags in specific deployments to be mapped to Capistrano roles.
 
-At present these mappings require several api calls, which are slow.
+At present these mappings require several api calls, which are slow. On the first call, a cache file is written in the users
+home directory. This can be disabled with an ENV variable RIGHTSCALE_CACHE=false.
 
 Installation
 ============
